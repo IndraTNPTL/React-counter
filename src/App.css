@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kanit", sans-serif;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 1.7rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 2rem 3rem;
+  height: 7rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.imgLogo {
+  height: 2.5rem;
+  padding-right: 3rem;
+}
+
+main {
+  height: calc(100vh - 12rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.counter-container {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.number {
+  background-color: #5c48d3;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 1rem;
+
+  padding: 1rem;
+
+  font-size: 5rem;
+  font-weight: 300;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.counter-container button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: transparent;
+}
+
+.resetBtn {
+  background-color: #5c48d3;
+  color: white;
+  padding: 0.8rem 2rem;
+  font-size: 1.5rem;
+  border-radius: 12px;
+}
+
+footer {
+  font-weight: 300;
+  height: 5rem;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+footer span {
+  font-weight: 500;
+}
