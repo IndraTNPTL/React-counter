@@ -13,33 +13,41 @@ function App() {
     <>
       <Header title="React Counter" />
       <main>
-        <div className="counter-container">
-          <button
-            onClick={() => {
-              setCounter(counter - 1);
-            }}
-          >
-            <img src={minusSign} alt="minusSign" />
-          </button>
+        <div id="counter-container">
+          <div className="btnContainer">
+            {counter > 0 && (
+              <button
+                onClick={() => {
+                  setCounter(counter - 1);
+                }}
+              >
+                <img src={minusSign} alt="minusSign" />
+              </button>
+            )}
+          </div>
 
-          <div className="number">
+          <div id="number">
             <p>{counter}</p>
           </div>
 
-          <button
-            onClick={() => {
-              setCounter(counter + 1);
-            }}
-          >
-            <img src={plusSign} alt="plusSign" />
-          </button>
+          <div className="btnContainer">
+            {counter < 10 && (
+              <button
+                onClick={() => {
+                  setCounter(counter + 1);
+                }}
+              >
+                <img src={plusSign} alt="plusSign" />
+              </button>
+            )}
+          </div>
         </div>
 
         <button
           onClick={() => {
-            setCounter(counter - counter);
+            setCounter(0);
           }}
-          className="resetBtn"
+          id="resetBtn"
         >
           Reset
         </button>
